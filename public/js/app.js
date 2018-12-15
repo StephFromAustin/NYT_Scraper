@@ -11,7 +11,7 @@ document.getElementById('scrape').addEventListener('click', function() {
 $(document).on('click', '#savebtn', function(){
     let id = $(this).data('id');
     $.ajax({ 
-        method: 'POST'
+        method: 'POST',
         url: '/saved/' + id,
         data: {
             saved: true
